@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+void printNumber(int x){
+    cout<< "print integer "<< x<<endl;
+}
+void printNumber(float x){
+    cout<< "print decimal "<< x<<endl;
+}
+int main()
+{
+    int a = 54;
+    float b = 32.4896;
+//easy for the user to enter.
+//the program will use the appropriate function for the data.
+    printNumber(a);
+    printNumber(b);
+}
