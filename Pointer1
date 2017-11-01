@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+    //pointer special type of variable that points to
+    //the memory address,a variable that contains memory
+    //memory address of value.
+int main()
+{
+    int fish = 5;
+    //address operator
+    //find memory address of the variable.
+    cout << &fish <<endl;
+
+    int *fishPointer;
+    fishPointer =&fish;
+    //assign memory of fish to fishPointer
+
+    cout << fishPointer << endl;
+}
