@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int tuna = 20;
+
+int main()
+{
+    int tuna =40;
+    cout<<tuna<<endl;
+    //access globle varaible.
+    //Unary scope resolution operator
+    //double colon
+    cout<<::tuna<<endl;
+}
