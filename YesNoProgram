@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char choice ='Y';
+    bool valid = true;
+    //some calculation
+            here:
+            int x =1+1;
+            cout<<"Some calculation = "<<x<<endl;
+        while(valid){
+                cout<<"Would you like to perform other calculation?(Y/N)"<<endl;
+                cin >> choice;
+                if(choice =='N' || choice =='n'){
+                    break;
+            }
+                if(choice =='Y'||choice =='y'){
+                    goto here;
+            }
+             else if(choice != 'N'&& choice != 'n'&&choice != 'Y'&&choice != 'y'){
+                    cout<<"Invalid input."<<endl;
+                    valid = true;
+            }
+    }
+    return 0;
+}
