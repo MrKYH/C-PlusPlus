@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int cell[2][3] = {{2,3,4},{8,9,10}};
+
+    //row and column start with 0;
+    //2,3,4
+    //8,9,10
+    //access the elements using 2D array.
+    cout << cell[0][2]<< endl;
+
+    //loop through each row
+    for(int row=0;row<2;row++){
+
+        for(int column=0;column<3;column++){
+            cout << cell[row][column] <<" ";
+        }
+        cout <<endl;
+    }
+    return 0;
+
+
+}
