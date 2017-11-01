@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class myClass{
+    //access specifier
+    public:
+        //constructor:automatically run when the class is used.
+        myClass(string z){
+            cout <<"Automatically print crap and set name."<< endl;
+            setName(z);
+        }
+        void setName(string x){
+            name = x;
+        }
+        string getName(){
+            return name;
+        }
+    private:
+        string name;
+};
+int main()
+{
+    //use the class:myclass
+    //create name of new object from class:coolObject
+/*
+    myClass coolObject;
+    coolObject.setName("Fat Kido");
+    */
+    myClass coolObject1("Cool object 1");
+    cout <<coolObject1.getName()<<endl;
+    myClass coolObject2("Cool object 2");
+    cout <<coolObject2.getName()<<endl;
+    return 0;
+}
